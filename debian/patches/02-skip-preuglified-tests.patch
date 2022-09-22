@@ -1,0 +1,12 @@
+Description: skip preuglified tests
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -417,7 +417,7 @@
+ 
+     // Unit tests.
+     nodeunit: {
+-      tests: ['test/*_test.js']
++      tests: ['test/*_test.js' - 'test/uglify_test.js']
+     }
+   });
+ 

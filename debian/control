@@ -1,0 +1,35 @@
+Source: node-grunt-contrib-uglify
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
+Build-Depends: debhelper-compat (= 12)
+ , grunt <!nocheck>
+ , node-bytes <!nocheck>
+ , node-grunt-contrib-clean <!nocheck>
+ , node-grunt-contrib-internal <!nocheck>
+ , node-grunt-contrib-nodeunit <!nocheck>
+ , node-uglify-js <!nocheck>
+ , node-uri-path <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-contrib-uglify
+Vcs-Git: https://salsa.debian.org/js-team/node-grunt-contrib-uglify.git
+Homepage: https://github.com/gruntjs/grunt-contrib-uglify
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-grunt-contrib-uglify
+Architecture: all
+Depends: ${misc:Depends}
+ , node-bytes
+ , node-chalk
+ , node-lodash-packages
+ , node-uglify-js
+ , node-uri-path
+ , nodejs
+Description: Minify JavaScript files with UglifyJS
+ Node.js module that provides a grunt plugin to minify JavaScript
+ files with UglifyJS.
+ .
+ Node.js is an event-based server-side JavaScript engine.

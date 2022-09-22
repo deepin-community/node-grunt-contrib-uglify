@@ -1,0 +1,3 @@
+00-maxmin.diff
+01-remove-jshint.patch
+02-skip-preuglified-tests.patch

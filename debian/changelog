@@ -1,0 +1,55 @@
+node-grunt-contrib-uglify (4.0.1+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 12 Mar 2020 22:29:29 +0100
+
+node-grunt-contrib-uglify (4.0.1+dfsg-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 4.0.1+dfsg
+  * Install upstream docs
+  * refresh patches
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 14:34:07 +0100
+
+node-grunt-contrib-uglify (3.4.0+dfsg-3) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Use pkg-js-tools auto test & install
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 14:21:53 +0100
+
+node-grunt-contrib-uglify (3.4.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+  * Switch to node-uglify-js from node-uglify
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 Jul 2019 20:03:27 +0530
+
+node-grunt-contrib-uglify (3.4.0+dfsg-1) experimental; urgency=medium
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Pirate Praveen ]
+  * New upstream version 3.4.0+dfsg
+  * Bump Standards-Version to 4.2.0 (no changes needed)
+  * Bump debhelper compatibility level to 11
+  * Change section web -> javascript
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 04 Aug 2018 20:37:05 +0530
+
+node-grunt-contrib-uglify (2.0.0+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #848853)
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Thu, 22 Dec 2016 21:41:10 +0000

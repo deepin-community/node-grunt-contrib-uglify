@@ -1,0 +1,5 @@
+version=3
+opts=repacksuffix=+dfsg,\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-grunt-contrib-uglify-$1.tar.gz/ \
+ https://github.com/gruntjs/grunt-contrib-uglify/tags .*/archive/v?([\d\.]+).tar.gz

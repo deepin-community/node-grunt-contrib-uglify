@@ -1,0 +1,31 @@
+Description: Avoid the dependency on maxmin by providing a simple
+ replacement.
+Forwarded: not-needed
+Author: Paolo Greppi <paolo.greppi@libpf.com>
+
+--- a/tasks/uglify.js
++++ b/tasks/uglify.js
+@@ -10,10 +10,22 @@
+ 
+ var path = require('path');
+ var chalk = require('chalk');
+-var maxmin = require('maxmin');
++var bytes = require('bytes');
+ var uriPath = require('uri-path');
+ var err;
+ 
++// replacement for maxmin
++// Copyright (c) Paolo Greppi 2016
++// MIT license
++// based on https://github.com/sindresorhus/maxmin/blob/master/index.js
++// - this is a real OS ! patch away figures
++// - use node-bytes rather than the unpackaged pretty-bytes
++// - skip gzip size
++function maxmin(max, min, useGzip) {
++  var ret = chalk.green(bytes(typeof max === 'number' ? max : max.length)) + ' → ' + chalk.green(bytes(typeof min === 'number' ? min : min.length));
++  return ret;
++}
++
+ // Return the relative path from file1 => file2
+ function relativePath(file1, file2) {
+   var file1Dirname = path.dirname(file1);
