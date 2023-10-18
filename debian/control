@@ -3,7 +3,7 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
-Build-Depends: debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
  , grunt <!nocheck>
  , node-bytes <!nocheck>
  , node-grunt-contrib-clean <!nocheck>
@@ -11,8 +11,8 @@ Build-Depends: debhelper-compat (= 12)
  , node-grunt-contrib-nodeunit <!nocheck>
  , node-uglify-js <!nocheck>
  , node-uri-path <!nocheck>
- , pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.5.0
+ , dh-sequence-nodejs
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-contrib-uglify
 Vcs-Git: https://salsa.debian.org/js-team/node-grunt-contrib-uglify.git
 Homepage: https://github.com/gruntjs/grunt-contrib-uglify
@@ -27,7 +27,6 @@ Depends: ${misc:Depends}
  , node-lodash-packages
  , node-uglify-js
  , node-uri-path
- , nodejs
 Description: Minify JavaScript files with UglifyJS
  Node.js module that provides a grunt plugin to minify JavaScript
  files with UglifyJS.
